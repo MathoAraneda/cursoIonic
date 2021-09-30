@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ButtonPage implements OnInit {
 
+  favorito: Boolean = false;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onClick(){
+    this.favorito = !this.favorito;
   }
 
 }
